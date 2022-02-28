@@ -79,7 +79,8 @@ const Data = () => {
           </Button>
         </DialogActions>
       </Dialog>
-            <table className="table stripped">
+       <div className="horizontal-scroll container">
+       <table className="table stripped">
                 <thead>
                     <th>Username</th>
                     <th>Sex</th>
@@ -151,6 +152,7 @@ const Data = () => {
                
                 </tbody>
             </table>
+       </div>
             </section>
         </main>
      );
