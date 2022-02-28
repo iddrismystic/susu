@@ -6,12 +6,16 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { useState } from "react";
+import Navbar from "../components/Navbar";
 const Data = () => {
     const [payment, setpayment] = useState(false)
     const [withdrawal, setwithdrawal] = useState(false)
     return ( 
-        <main className="container">
-                <Dialog
+        <main className="">
+            <Navbar />
+
+            <section className="Content">
+            <Dialog
         open={payment}
         // onClose={handleClose}
         aria-labelledby="alert-dialog-title"
@@ -147,6 +151,7 @@ const Data = () => {
                
                 </tbody>
             </table>
+            </section>
         </main>
      );
 }

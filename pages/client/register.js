@@ -1,9 +1,10 @@
 import {TextField, Button} from "@mui/material"
 import { useRef } from 'react'
-import {useRouter} from "react"
+import Navbar from "../../components/Navbar"
+
 const Register = () => {
     const form = useRef(null)
-    const router = useRouter()
+  
     const HandleForm = ()=>{
       const current = form.current;
       const username = current["username"].value;
@@ -22,7 +23,9 @@ const Register = () => {
     }
     return ( 
         <main>
-<div className="padding">
+          <Navbar />
+          <section className="Content">
+          <div className="padding">
    <form ref={form}>
    <div className="form width-500-max shadow-bingo">
       <div className="padding hr">
@@ -56,6 +59,7 @@ const Register = () => {
     </div>
    </form>
     </div>
+          </section>
         </main>
      );
 }
