@@ -37,22 +37,22 @@ const Navbar = () => {
                 <div className="padding design">
                     <Link href="/client/register">
                     <a className="text-black">
-                    <div className="sideLink"><i class="fas fa-user-plus text-indigo"></i> Register User</div>
+                    <div className="sideLink"><i className="fas fa-user-plus text-indigo"></i> Register User</div>
                     </a>
                     </Link>
                     <Link href="/data">
                     <a className="text-black">
-                    <div className="sideLink"><i class="fas fa-plus text-indigo"></i> Credit Account</div>
+                    <div className="sideLink"><i className="fas fa-plus text-indigo"></i> Credit Account</div>
                     </a>
                     </Link>
                     <Link href="/data">
                     <a className="text-black">
-                    <div className="sideLink"><i class="fas fa-minus text-indigo"></i> Debit Account</div>
+                    <div className="sideLink"><i className="fas fa-minus text-indigo"></i> Debit Account</div>
                     </a>
                     </Link>
                     <Link href="/data">
                     <a className="text-black">
-                    <div className="sideLink"><i class="fas fa-history text-indigo"></i> History</div>
+                    <div className="sideLink"><i className="fas fa-history text-indigo"></i> History</div>
                     </a>
                     </Link>
                 </div>
