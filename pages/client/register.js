@@ -24,7 +24,7 @@ const Register = () => {
       const kin_contact = current["kin_contact"].value;
       const kin_dob = current["kin_dob"].value;
   
-      if(surname === "" || sex === "" || age==="" || business==="" || daily_rate==="" ||){
+      if(surname === "" || sex === "" || age==="" || business==="" || daily_rate===""){
         alert("Enter sure to fill all the credentials")
       }else{
         // router.push("/data")
