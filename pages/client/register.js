@@ -7,14 +7,24 @@ const Register = () => {
   
     const HandleForm = ()=>{
       const current = form.current;
-      const username = current["username"].value;
+      const surname = current["surname"].value;
+      const lastname = current["lastname"].value;
       const sex = current["sex"].value;
       const age = current["age"].value;
       const business = current["business"].value;
       const daily_rate = current["daily_rate"].value;
-      const start_date = current["start_date"].value;
+      const dob = current["dob"].value;
+      const location = current["location"].value;
+      const business_name = current["business_name"].value;
+      const business_location = current["business_location"].value;
+      const contact = current["contact"].value;
+      const business_address = current["business_address"].value;
+      const next_of_kin = current["next_of_kin"].value;
+      const kin_relation = current["kin_relation"].value;
+      const kin_contact = current["kin_contact"].value;
+      const kin_dob = current["kin_dob"].value;
   
-      if(username === "" || sex === "" || age==="" || business==="" || daily_rate==="" || start_date ===""){
+      if(surname === "" || sex === "" || age==="" || business==="" || daily_rate==="" ||){
         alert("Enter sure to fill all the credentials")
       }else{
         // router.push("/data")
@@ -27,27 +37,69 @@ const Register = () => {
           <section className="Content">
           <div className="padding">
    <form ref={form}>
-   <div className="form width-500-max shadow-bingo">
+   <div className="form width-800-max shadow-bingo">
       <div className="padding hr">
         <div className="h2"> Register user </div>
       </div>
-      <div className="padding-top-40">
-        <div className="padding">
-      <TextField required name="username" type="text" variant="outlined" fullWidth label="Username"/>
+      <div className="padding-top-40 row">
+        <div className="padding col sm-12 md-12 lg-12">
+          <div className="h3">Personal Information</div>
       </div>
-      <div className="padding">
-      <TextField required name="sex" type="password" variant="outlined" fullWidth label="Sex"/>
+        <div className="padding col sm-12 md-6 lg-6">
+      <TextField required name="surname" type="text" variant="outlined" fullWidth label="Surname"/>
       </div>
-      <div className="padding">
-      <TextField required name="age" type="password" variant="outlined" fullWidth label="Age"/>
+        <div className="padding col sm-12 md-6 lg-6">
+      <TextField required name="lastname" type="text" variant="outlined" fullWidth label="Lastname"/>
       </div>
-      <div className="padding">
-      <TextField required name="business" type="password" variant="outlined" fullWidth label="Type of Business"/>
+        <div className="padding col sm-12 md-6 lg-6">
+      <TextField required name="dob" type="date" variant="outlined" fullWidth label="Date Of Birth"/>
       </div>
-      <div className="padding">
-      <TextField required name="daily_rate" type="password" variant="outlined" fullWidth label="Daily Rate"/>
+        <div className="padding col sm-12 md-6 lg-6">
+      <TextField required name="location" type="text" variant="outlined" fullWidth label="Location"/>
       </div>
-      <div className="padding">
+      <div className="padding col sm-12 md-6 lg-6">
+      <TextField required name="sex" type="text" variant="outlined" fullWidth label="Gender"/>
+      </div>
+      <div className="padding col sm-12 md-6 lg-6">
+      <TextField required name="age" type="text" variant="outlined" fullWidth label="Age"/>
+      </div>
+      <div className="padding col sm-12 md-12 lg-12">
+          <div className="h3">Business Information</div>
+      </div>
+      <div className="padding col sm-12 md-6 lg-6">
+      <TextField required name="business_name" type="text" variant="outlined" fullWidth label="Business Name"/>
+      </div>
+      <div className="padding col sm-12 md-6 lg-6">
+      <TextField required name="business_location" type="text" variant="outlined" fullWidth label="Business Location"/>
+      </div>
+      <div className="padding col sm-12 md-6 lg-6">
+      <TextField required name="business" type="text" variant="outlined" fullWidth label="Type of Business"/>
+      </div>
+      <div className="padding col sm-12 md-6 lg-6">
+      <TextField required name="contact" type="text" variant="outlined" fullWidth label="Contact"/>
+      </div>
+      <div className="padding col col sm-12 md-12 lg-12">
+      <TextField required name="business_address" multiline rows={2} type="text" variant="outlined" fullWidth label="Business Address"/>
+      </div>
+      <div className="padding col sm-12 md-12 lg-12">
+          <div className="h3">Next Of Kin</div>
+      </div>
+      <div className="padding col sm-12 md-6 lg-6">
+      <TextField required name="next_of_kin" type="text" variant="outlined" fullWidth label="Next Of Kin"/>
+      </div>
+      <div className="padding col sm-12 md-6 lg-6">
+      <TextField required name="kin_relation" type="text" variant="outlined" fullWidth label="Relation To Next Of Kin"/>
+      </div>
+      <div className="padding col sm-12 md-6 lg-6">
+      <TextField required name="kin_dob" type="text" variant="outlined" fullWidth label="Date Of Birth"/>
+      </div>
+      <div className="padding col sm-12 md-6 lg-6">
+      <TextField required name="kin_contact" type="text" variant="outlined" fullWidth label="Contact"/>
+      </div>
+      <div className="padding col sm-12 md-6 lg-6">
+      <TextField required name="daily_rate" type="text" variant="outlined" fullWidth label="Daily Rate"/>
+      </div>
+      <div className="padding col sm-12 md-6 lg-6">
       <TextField required name="start_date" autoFocus type="date" variant="outlined" fullWidth label="Start Date"/>
       </div>
       <div className="padding">

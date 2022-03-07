@@ -79,7 +79,7 @@ const Data = () => {
           </Button>
         </DialogActions>
       </Dialog>
-       <div className="horizontal-scroll container">
+       <div className="horizontal-scroll container design">
        <table className="table stripped">
                 <thead>
                     <th>Username</th>
