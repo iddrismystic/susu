@@ -1,10 +1,76 @@
 /* form */
 @import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap');
 *{font-family: 'Sintony', sans-serif;}
+/* design */
+.box{
+border: 2px solid #E3E6E8;
+height: 50px;
+width: 50px;
+position: absolute;
+animation: Anime 10s ease-in infinite;
+}
+.loader{
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50% ,-50%);
+font-size: xx-large;
+height: 100px;
+width: 100px;
+border-left: 10px solid #E3E6E8;
+border-top: 10px solid #E3E6E8;
+border-radius: 50%;
+animation: Loader 1s ease-in infinite;
+/* box-shadow: 0px 10px 20px 0px rgba(225,225,225,0.5); */
+}
+
+.d1{
+  top: 100px;
+  right: 150px;
+}
+.d2{
+  top: 200px;
+  right: 100px;
+}
+.d3{
+  top: 300px;
+  right: 200px;
+}
+.d4{
+  top: 400px;
+  right: 300px;
+}
+.d5{
+  top: 500px;
+  right: 200px;
+}
+
+@keyframes Anime {
+  20%{
+    opacity: 0;
+    
+  }
+  40%{
+    transform: rotate(180deg);
+  }
+}
+@keyframes Loader {
+from{
+  transform: rotate(0deg);
+}
+to{
+  transform: rotate(360deg);
+}
+}
 .form{
+  min-width: 250px;
+  width: 100%;
   margin:10px auto;
   padding:20px 0px 40px;
-  position:relative
+  position:absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 .form::after{
 content:"";
@@ -59,17 +125,19 @@ Link a{
   top: 0;
   width: 80%;
   padding-top: 100px;
+
 }
 
-@media (max-width : 900px){
+@media (max-width : 993px){
   .sideBar{
     top: 0;
     left: 0;
-    width: 300px;
+    /* width: 300px; */
     height: 100vh;
   }
   .resnav{
-  display: none;
+    top: 0;
+    left: 0;
   }
   .sideTrigger{
     display: block;
@@ -84,3 +152,152 @@ Link a{
 .sideLink a{color: black;}
 .sideLink:hover{background-color: #E3E6E8;}
 .sideLink:hover i{background-color: #E3E6E8;}
+/* animate bg */
+
+.context {
+  width: 100%;
+  position: absolute;
+  top:50vh;
+  
+}
+
+.context h1{
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+}
+
+
+.area{
+background: #4e54c8;  
+background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+width: 100%;
+height:100vh;
+background-attachment: fixed;
+background-size: 100% 100%;
+position:relative;
+
+}
+
+.circles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  
+}
+
+.circles li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+
+}
+.default{
+  /* background-color: #f1f1f1; */
+  border: 1px solid black;
+}
+.default:hover{
+  box-shadow: 0px 10px 20px 0px rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0,0,0,0.5);
+}

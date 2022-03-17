@@ -16,9 +16,20 @@ export default function Home() {
     }
   }
   return (
-    <div className="padding">
+    <div>
+      
+<div className="container" >
+
+          <div className="loader">
+            <div className="design"></div>
+          </div>
+      {/* <div className="box d1"></div>
+      <div className="box d2"></div>
+      <div className="box d3"></div>
+      <div className="box d4"></div>
+      <div className="box d5"></div> */}
    <form ref={form}>
-   <div className="form width-500-max shadow-bingo">
+   <div className="form width-500-max default">
       <div className="padding hr">
         <div className="h2"> Login Account </div>
       </div>
@@ -37,6 +48,7 @@ export default function Home() {
   </div>
     </div>
    </form>
+   </div>
     </div>
   )
 }

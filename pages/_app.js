@@ -1,10 +1,13 @@
 import '../styles/globals.css'
 import '../styles/fun.css'
+import Layout from '../components/Layout'
 
 function MyApp({ Component, pageProps }) {
   return (
     <div>
-    <Component {...pageProps} />
+ <Layout >
+ <Component {...pageProps} />
+ </Layout>
     </div>
   )
 }

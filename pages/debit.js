@@ -6,48 +6,17 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { useState } from "react";
-import Navbar from "../components/Navbar";
-const Data = () => {
+
+const Debit = () => {
 const [payment, setpayment] = useState(false)
 const [withdrawal, setwithdrawal] = useState(false)
+const [amount, setamount] = useState(0)
 return ( 
 <main className="">
 
 
     <section className="Content">
-    <Dialog
-open={payment}
-// onClose={handleClose}
-aria-labelledby="alert-dialog-title"
-aria-describedby="alert-dialog-description"
->
-<DialogTitle id="alert-dialog-title">
-  <div className="padding hr">
-  {"Make Daily Payment"}
-  </div>
-</DialogTitle>
-<DialogContent>
-    <DialogContentText id="alert-dialog-description">
-        <div className=" row default padding-20">
-    <div className="padding col sm-12 md-6 lg-6">
-    <TextField fullWidth defaultValue={"Iddris Abdul wahab"} label="Fullname"  disabled/>
-    </div>
-    <div className="padding col sm-12 md-6 lg-6">
-    <TextField fullWidth type="number" defaultValue={34} label="Rate"  disabled/>
-    </div>
-    <div className="padding col sm-12 md-12 lg-12">
-    <TextField fullWidth type="date" label="Date"  autoFocus/>
-    </div>
-        </div>
-    </DialogContentText>
-</DialogContent>
-<DialogActions>
-    <Button onClick={()=>setpayment(false)} color="error">Close</Button>
-    <Button autoFocus  variant="contained" color="success">
-    Make Payment 50.00
-    </Button>
-</DialogActions>
-</Dialog>
+
         <Dialog
 open={withdrawal}
 // onClose={handleClose}
@@ -73,7 +42,7 @@ aria-describedby="alert-dialog-description"
     </div>
 
     <div className="padding col sm-12 md-6 lg-6">
-        <TextField fullWidth type="number"  label="Amount To Withdraw" />
+        <TextField fullWidth type="number"  label="Amount To Withdraw" onChange={(e)=>setamount(e.target.value)}/>
     </div>
 </div>
     </DialogContentText>
@@ -81,12 +50,12 @@ aria-describedby="alert-dialog-description"
 <DialogActions>
     <Button onClick={()=>setwithdrawal(false)} color="error">Close</Button>
     <Button autoFocus variant="contained" color="success">
-    Withdraw 0.00
+    Withdraw {amount}.00
     </Button>
 </DialogActions>
 </Dialog>
 <div className="container">
-<div className="section h2">Credit Account</div>
+<div className="section h2">Debit Account</div>
 <div className="section">
     <TextField variant="outlined" label="Search" />
 </div>
@@ -99,7 +68,7 @@ aria-describedby="alert-dialog-description"
     <th>Business</th>
     <th>Rate</th>
     <th>Start Date</th>
-    <th>Credit</th>
+    <th>Withdraw</th>
 </thead>
 <tbody>
 <tr>
@@ -109,9 +78,10 @@ aria-describedby="alert-dialog-description"
 <td>Trader</td>
 <td>3</td>
 <td>22/37/2022</td>
+
 <td>
-    <Button color="success" variant="contained" onClick={()=>setpayment(true)}>
-        Credit
+    <Button color="success" variant="contained" onClick={()=>setwithdrawal(true)}>
+        Withdraw
     </Button>
 </td>
 
@@ -123,12 +93,12 @@ aria-describedby="alert-dialog-description"
     <td>Trader</td>
     <td>3</td>
     <td>22/37/2022</td>
+
     <td>
-        <Button color="success" variant="contained" onClick={()=>setpayment(true)}>
-            Credit
+        <Button color="success" variant="contained" onClick={()=>setwithdrawal(true)}>
+            Withdraw
         </Button>
     </td>
-
 
     </tr>
     <tr>
@@ -138,9 +108,10 @@ aria-describedby="alert-dialog-description"
     <td>Trader</td>
     <td>3</td>
     <td>22/37/2022</td>
+   
     <td>
-        <Button color="success" variant="contained" onClick={()=>setpayment(true)}>
-            Credit
+        <Button color="success" variant="contained" onClick={()=>setwithdrawal(true)}>
+            Withdraw
         </Button>
     </td>
 
@@ -156,4 +127,4 @@ aria-describedby="alert-dialog-description"
      );
 }
  
-export default Data;
+export default Debit;

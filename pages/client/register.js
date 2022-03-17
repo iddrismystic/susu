@@ -32,12 +32,13 @@ const Register = () => {
       }
     }
     return ( 
-        <main>
-          <Navbar />
+        <main className="">
+          {/* <div className="loader"></div> */}
+   
           <section className="Content">
           <div className="padding">
    <form ref={form}>
-   <div className="form width-800-max shadow-bingo">
+   <div className="center width-800-max default">
       <div className="padding hr">
         <div className="h2"> Register user </div>
       </div>
