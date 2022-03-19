@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
+import Brand from "./Brand";
 const Navbar = () => {
     const [sidebar, setsidebar] = useState("250px")
     useEffect(()=>{
@@ -22,9 +23,9 @@ const Navbar = () => {
     })
     return ( 
         <section>
-        <nav className="fixed-top white width-100-p ">
-        <div className="design">
-            <div className="navigation-bar card hr">
+        <nav className="fixed-top">
+        <div>
+            <div className="navigation-bar card white">
             <div className="h4 padding">
                 <span className="">
                 Susu
@@ -32,7 +33,7 @@ const Navbar = () => {
             </div>
             <div className="row-flex">
             <div className="dropdown-hover">
-               <button className="height-40 width-40 circle button white pointer hover-indigo hover-text-white">W</button>
+               <button className="height-40 width-40 circle button pointer indigo text-white">W</button>
                <div className="drop-menu white item-hoverable">
                <div className="width-200">
                <div className="drop-item">
@@ -57,34 +58,54 @@ const Navbar = () => {
             </div>
         </div>
         </nav>
-            <div className="sideBar resnav" style={{width:`${sidebar}`}}>
-                <div className="padding-20">
-                    <div className="default padding-20">
+            <div className="sideBar resnav navy" style={{width:`${sidebar}`}}>
+                <div className="">
+                    <div className="">
                     <div className="text-right sideTrigger">
                     <button className="button height-40 width-40 circle white"  onClick={()=>setsidebar("0px")}>
                     <i className="fas fa-times pointer text-red"></i>
                     </button>
                     </div>
+                    <div className="padding-20 hr">
+                        <div className="h3"><Brand /></div>
+                    </div>
+                    <div className="padding navy-light">
+                       <div className="row-flex">
+                           <div className="padding">
+                           <button className="height-40 width-40 circle button white text-navy pointer">W</button>
+                           </div>
+                           <div className="padding">
+                           <div className="h6">
+                               Iddris abdul wahab
+                           </div>
+                           <div className="">
+                               Officer
+                           </div>
+                           </div>
+                       </div>
+                    </div>
+                    <div className="padding-top-20">
                     <Link href="/client/register">
-                    <a className="text-black">
-                    <div className="sideLink"><i className="fas fa-user-plus text-indigo"></i> Register User</div>
+                    <a className="text-white">
+                    <div className="sideLink">Register User <i className="fas fa-angle-right text-indigo"></i></div>
                     </a>
                     </Link>
                     <Link href="/data">
-                    <a className="text-black">
-                    <div className="sideLink"><i className="fas fa-plus text-indigo"></i> Credit Account</div>
+                    <a className="text-white">
+                    <div className="sideLink">Credit Account  <i className="fas fa-angle-right text-indigo"></i></div>
                     </a>
                     </Link>
                     <Link href="/debit">
-                    <a className="text-black">
-                    <div className="sideLink"><i className="fas fa-minus text-indigo"></i> Debit Account</div>
+                    <a className="text-white">
+                    <div className="sideLink">Debit Account  <i className="fas fa-angle-right text-indigo"></i></div>
                     </a>
                     </Link>
                     <Link href="/report">
-                    <a className="text-black">
-                    <div className="sideLink"><i className="fas fa-history text-indigo"></i> Report</div>
+                    <a className="text-white">
+                    <div className="sideLink">Report  <i className="fas fa-angle-right text-indigo"></i></div>
                     </a>
                     </Link>
+                    </div>
                     </div>
                 </div>
             </div>

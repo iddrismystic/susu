@@ -15,6 +15,7 @@ return (
 
 
     <section className="Content">
+        <Navbar />
     <Dialog
 open={payment}
 // onClose={handleClose}

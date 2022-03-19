@@ -131,7 +131,7 @@ button{-webkit-appearance:button}link{text-decoration: none;}link:hover{text-dec
 .responsive{width: 100%;height: auto;}.row-flex{display: flex;flex-direction: row;}.content-middle{display: flex;justify-content: center;align-items: center;text-align: center;}
 .top-right{position: absolute;top: 0px;right: 0px}.top-left{position: absolute;top: 0px;left: 0px}.top{position: absolute;top: 0px}.bottom-right{position: absolute;bottom: 0px;right: 0px}
 .bottom-left{position: absolute;bottom: 0px;left: 0px}.bottom{position: absolute;bottom: 0px}.clear-both{clear: both;}.content-middle{display:flex;justify-content: center;align-items: center;}
-.sticky-top {position: -webkit-sticky;position: sticky;top: 0px;z-index: 5;width: 100%;}.fixed-top{position: fixed;top: 0px;z-index: 5;width: 100%;}
+.sticky-top {position: -webkit-sticky;position: sticky;top: 0px;z-index: 5;width: 100%;}.fixed-top{position: fixed;top: 0px;z-index: 5;}
 .relative{position: relative;}.fixed{position: fixed;}.sticky{position: sticky;}.absolute{position: absolute;}
 .block{display: block;}.inline-block{display: inline-block;}.middle{display: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
 .shadow{box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);}.hover-shadow{transition: 0.3s;}.hover-shadow:hover{box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
@@ -187,8 +187,6 @@ button{-webkit-appearance:button}link{text-decoration: none;}link:hover{text-dec
 .alert.danger-outline .icon{color: rgba(220, 17, 1, 0.8);}
 .alert.danger-outline .close{color:rgba(220, 17, 1, 0.8);}
 
-/* side bar */
-.sidebar{width: 0px;height: 100%;position: fixed;top: 0px;left: 0px;transition: 0.4s;z-index: 8;overflow: auto;}
 /*border radius and borders*/
 .round{border-radius: 50%;}.round-edge{border-radius: 15px;}.round-top-left-edge{border-top-left-radius: 15px;}.round-top-right-edge{border-top-right-radius: 15px;}
 .round-top-edge{border-top-left-radius: 15px;border-top-right-radius: 15px;}.round-left-edge{border-top-left-radius: 15px;border-bottom-left-radius: 15px;}.round-right-edge{border-top-right-radius: 15px;border-bottom-right-radius: 15px;}

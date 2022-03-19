@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import {TextField, Button} from "@mui/material"
 import { useRef } from 'react'
+import Navbar from '../components/Navbar'
 export default function Home() {
   const form = useRef(null)
   const HandleForm = ()=>{
@@ -16,20 +17,16 @@ export default function Home() {
     }
   }
   return (
-    <div>
-      
+    <div className='min-vh Content'>
+  <Navbar />    
 <div className="container" >
 
-          <div className="loader">
+          {/* <div className="loader">
             <div className="design"></div>
-          </div>
-      {/* <div className="box d1"></div>
-      <div className="box d2"></div>
-      <div className="box d3"></div>
-      <div className="box d4"></div>
-      <div className="box d5"></div> */}
+          </div> */}
+
    <form ref={form}>
-   <div className="form width-500-max default">
+   <div className="form width-500-max card white">
       <div className="padding hr">
         <div className="h2"> Login Account </div>
       </div>

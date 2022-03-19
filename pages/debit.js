@@ -6,6 +6,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { useState } from "react";
+import Navbar from "../components/Navbar";
 
 const Debit = () => {
 const [payment, setpayment] = useState(false)
@@ -16,7 +17,7 @@ return (
 
 
     <section className="Content">
-
+        <Navbar />
         <Dialog
 open={withdrawal}
 // onClose={handleClose}

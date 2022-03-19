@@ -36,11 +36,12 @@ const Register = () => {
           {/* <div className="loader"></div> */}
    
           <section className="Content">
+            <Navbar />
           <div className="padding">
    <form ref={form}>
-   <div className="center width-800-max default">
+   <div className="center width-800-max card design navy-left">
       <div className="padding hr">
-        <div className="h2"> Register user </div>
+        <div className="h2 text-navy"> Register user </div>
       </div>
       <div className="padding-top-40 row">
         <div className="padding col sm-12 md-12 lg-12">
