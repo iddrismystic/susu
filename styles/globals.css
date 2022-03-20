@@ -1,6 +1,9 @@
 /* form */
 @import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap');
+@import url("https://cdn.lineicons.com/3.0/lineicons.css");
 *{font-family: 'Sintony', sans-serif;}
+.space-between{justify-content: space-between;}
 :root {
   --color-beige-100: #FFF0E5;
   --color-blue-0: #F5FCFF;
@@ -187,9 +190,9 @@ Link a{
 }
 .sideBar{
   position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
+  top: 70px;
+  left: 10px;
+  height: 80vh;
   min-height: 100vh;
   width: 20%;
   z-index: 5;
@@ -210,7 +213,7 @@ Link a{
 
 }
 
-.fixed-top{width: 80%;}
+.fixed-top{width: 100%;left: 0;}
 @media (max-width : 1000px){
   .sideBar{
     top: 0;
@@ -233,7 +236,7 @@ Link a{
 }
 /* Sidebar and links */
 .sideLink{transition: 0.3s ease-in;cursor: pointer;padding: 10px;}
-.sideLink:hover {background-color: var(--color-navy-700);}
+.sideLink:hover {background-color: var(--color-navy-700);color: whitesmoke;}
 /* animate bg */
 
 
