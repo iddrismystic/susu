@@ -33,7 +33,7 @@ const Navbar = () => {
             </div>
             <div className="row-flex">
             <div className="dropdown-hover">
-               <button className="height-40 width-40 circle button pointer indigo text-navy">W</button>
+               <button className="height-40 width-40 circle button pointer indigo navy text-white">W</button>
                <div className="drop-menu white item-hoverable">
                <div className="width-200">
                <div className="drop-item">
@@ -85,6 +85,18 @@ const Navbar = () => {
                        </div>
                     </div>
                     <div className="padding-top-20">
+                    <Link href="/dashboard">
+                    <a className="text-navy">
+                    <div className="sideLink">
+                        <div className="row-flex">
+                            <div><i className="lni lni-layout padding-right-10"></i></div>
+                            <div>
+                                Dashboard
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    </Link>
                     <Link href="/client/register">
                     <a className="text-navy">
                     <div className="sideLink">
@@ -117,7 +129,7 @@ const Navbar = () => {
                         <div className="row-flex">
                             <div><i className="lni lni-money-location padding-right-10"></i></div>
                             <div>
-                                Credit Account
+                                Debit Account
                             </div>
                         </div>
                     </div>

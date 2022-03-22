@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
-
+import {useRouter} from "next/router"
 const Report = () => {
+    const router = useRouter()
     return ( 
         <main>
             <div className="Content">
@@ -24,7 +25,13 @@ const Report = () => {
                                 </div>
                             </div>
                             <div className="col sm-12 md-4 lg-4 padding">
-                                <div className="padding card hover-up pointer navy-left">
+                                <div className="padding card hover-up pointer navy-left"
+                                onClick={
+                                    ()=>{
+                                        router.push("/reports/yearly")
+                                    }
+                                } 
+                                >
                                     <div className="h4">
                                         <div className="row-flex">
                                             <div className="padding">
@@ -38,7 +45,13 @@ const Report = () => {
                                 </div>
                             </div>
                             <div className="col sm-12 md-4 lg-4 padding">
-                                <div className="padding card hover-up pointer navy-left">
+                                <div className="padding card hover-up pointer navy-left"
+                                   onClick={
+                                    ()=>{
+                                        router.push("/reports/monthly")
+                                    }
+                                } 
+                                >
                                     <div className="h4">
                                         <div className="row-flex">
                                             <div className="padding">
@@ -52,7 +65,13 @@ const Report = () => {
                                 </div>
                             </div>
                             <div className="col sm-12 md-4 lg-4 padding">
-                                <div className="padding card hover-up pointer navy-left">
+                                <div className="padding card hover-up pointer navy-left"
+                                   onClick={
+                                    ()=>{
+                                        router.push("/reports/weekly")
+                                    }
+                                } 
+                                >
                                     <div className="h4">
                                         <div className="row-flex">
                                             <div className="padding">
@@ -66,7 +85,13 @@ const Report = () => {
                                 </div>
                             </div>
                             <div className="col sm-12 md-4 lg-4 padding">
-                                <div className="padding card hover-up pointer navy-left">
+                                <div className="padding card hover-up pointer navy-left"
+                                   onClick={
+                                    ()=>{
+                                        router.push("/reports/daily")
+                                    }
+                                } 
+                                >
                                     <div className="h4">
                                         <div className="row-flex">
                                             <div className="padding">

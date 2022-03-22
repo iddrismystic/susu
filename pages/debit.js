@@ -56,7 +56,12 @@ aria-describedby="alert-dialog-description"
 </DialogActions>
 </Dialog>
 <div className="container">
-<div className="section h2">Debit Account</div>
+<div className="row-flex card navy-left padding">
+<div><i className="lni lni-money-location h1 padding"></i></div>
+<div className="padding h2">
+    Debit Account
+</div>
+</div>
 <div className="section">
     <TextField variant="outlined" label="Search" />
 </div>

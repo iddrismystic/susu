@@ -17,8 +17,8 @@ export default function Home() {
     }
   }
   return (
-    <div className='min-vh Content'>
-  <Navbar />    
+    <div className=''>
+
 <div className="container" >
 
           {/* <div className="loader">
